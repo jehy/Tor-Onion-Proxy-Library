@@ -37,7 +37,7 @@ android {
         targetSdkVersion 25
         versionName '0.0.5'
         versionCode 4
-        archivesBaseName = 'ThaliOnionProxyAndroid'
+        archivesBaseName = 'MarcoTOnionProxyAndroid'
     }
     defaultConfig {
         minSdkVersion 16 // Please see the readme if you need Sdk support below 16
