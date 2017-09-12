@@ -14,6 +14,7 @@ See the Apache 2 License for the specific language governing permissions and lim
 buildscript {
     repositories {
         mavenCentral()
+	jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.3'
