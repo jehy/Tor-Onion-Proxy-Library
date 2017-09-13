@@ -1,10 +1,16 @@
-Tor Onion Proxy Library
+Tor Onion Proxy Library - with tor 0.3.2.0 alpha-dev built with NDK r15b
 =======================
 # What is this fork?
 This is a fork of [Thali Projects's Tor Onion Proxy Library](https://github.com/thaliproject/Tor_Onion_Proxy_Library) which was pretty outdated,
 hard to build, contained no release of library itself and no simple examples. I updated it's components, made build easier and added release library.
 Readme is updated to reflect those changes and contains a simple example on how to use this library.
 Also I removed all data on non-android builds - there are many other easier ways to use Tor on Windows and OS/X.
+
+This fork includes latest tor built with ndk r15b.
+Included tor is built using:
+openssl1.1.0f 
+libevent 2.0.23stable 
+latest tor (currently 0.3.2.0 alpha-dev)
 
 # What is this project?
 NOTE: This project exists independently of the Tor Project.
