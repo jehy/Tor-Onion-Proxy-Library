@@ -29,6 +29,7 @@ abstract public class OnionProxyContext {
     protected final static String GEO_IP_NAME = "geoip";
     protected final static String GEO_IPV_6_NAME = "geoip6";
     protected final static String TORRC_NAME = "torrc";
+    protected final static String PID_NAME = "pid";
     protected final File workingDirectory;
     protected final File geoIpFile;
     protected final File geoIpv6File;
@@ -36,6 +37,7 @@ abstract public class OnionProxyContext {
     protected final File torExecutableFile;
     protected final File cookieFile;
     protected final File hostnameFile;
+    protected final File pidFile;
 
     public OnionProxyContext(File workingDirectory) {
         this.workingDirectory = workingDirectory;
@@ -45,6 +47,7 @@ abstract public class OnionProxyContext {
         torExecutableFile = new File(getWorkingDirectory(), getTorExecutableFileName());
         cookieFile = new File(getWorkingDirectory(), ".tor/control_auth_cookie");
         hostnameFile = new File(getWorkingDirectory(), "/" + HIDDENSERVICE_DIRECTORY_NAME + "/hostname");
+        pidFile = new File(getWorkingDirectory(), PID_NAME);
     }
 
     public void installFiles() throws IOException, InterruptedException {
@@ -144,6 +147,8 @@ abstract public class OnionProxyContext {
     public File getWorkingDirectory() {
         return workingDirectory;
     }
+
+    public File getPidFile() { return pidFile; }
 
     public void deleteAllFilesButHiddenServices() throws InterruptedException {
         // It can take a little bit for the Tor OP to detect the connection is dead and kill itself
