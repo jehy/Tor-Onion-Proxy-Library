@@ -6,6 +6,8 @@ hard to build, contained no release of library itself and no simple examples. I 
 Readme is updated to reflect those changes and contains a simple example on how to use this library.
 Also I removed all data on non-android builds - there are many other easier ways to use Tor on Windows and OS/X.
 
+This fork includes latest tor built with ndk r15b.
+
 # What is this project?
 NOTE: This project exists independently of the Tor Project.
 
