@@ -6,14 +6,14 @@ hard to build, contained no release of library itself and no simple examples. I 
 Readme is updated to reflect those changes and contains a simple example on how to use this library.
 Also I removed all data on non-android builds - there are many other easier ways to use Tor on Windows and OS/X.
 
-This fork includes latest tor built with ndk r15b.
-Included tor is built using:
+__This fork includes latest tor built with ndk r15b, using:__
 
-openssl1.1.0f 
+__openssl1.1.0f__
 
-libevent 2.0.23stable 
+__libevent 2.0.23stable__
 
-latest tor (currently 0.3.2.0 alpha-dev)
+__latest tor (currently 0.3.2.0 alpha-dev)__
+
 
 
 # What is this project?
