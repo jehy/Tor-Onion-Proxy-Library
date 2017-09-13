@@ -15,6 +15,33 @@ __libevent 2.0.23stable__
 __latest tor (currently 0.3.2.0 alpha-dev)__
 
 
+# How to build aar file on Linux
+
+define the ANDROID_HOME environment variable, pointing to Android Sdk and start gradle:
+
+```export ANDROID_HOME=/home/marco/Android/Sdk/
+bash gradlew assembleRelease
+```
+the resulting file is:
+
+./build/outputs/aar/ThaliOnionProxyAndroid-release.aar
+
+You can use this aar directly in your Android Studio project, see for example:
+
+https://stackoverflow.com/questions/24506648/adding-local-aar-files-to-gradle-build-using-flatdirs-is-not-working/28816265
+
+You can import a local aar file via the File>New>New Module>Import .JAR/.AAR Package option in Android Studio.
+
+Then add the following to build.gradle:
+
+```
+dependencies {
+    compile project(':ThaliOnionProxyAndroid-release')
+    compile 'org.slf4j:slf4j-api:1.7.7'
+    compile 'org.slf4j:slf4j-android:1.7.7'
+}    
+```
+
 
 # What is this project?
 NOTE: This project exists independently of the Tor Project.
