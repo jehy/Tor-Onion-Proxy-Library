@@ -1,4 +1,4 @@
-Tor Onion Proxy Library
+Tor Onion Proxy Library - with tor 0.32 alpha-dev built with NDK r15b
 =======================
 # What is this fork?
 This is a fork of [Thali Projects's Tor Onion Proxy Library](https://github.com/thaliproject/Tor_Onion_Proxy_Library) which was pretty outdated,
