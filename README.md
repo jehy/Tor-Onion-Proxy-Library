@@ -8,9 +8,13 @@ Also I removed all data on non-android builds - there are many other easier ways
 
 This fork includes latest tor built with ndk r15b.
 Included tor is built using:
+
 openssl1.1.0f 
+
 libevent 2.0.23stable 
+
 latest tor (currently 0.3.2.0 alpha-dev)
+
 
 # What is this project?
 NOTE: This project exists independently of the Tor Project.
