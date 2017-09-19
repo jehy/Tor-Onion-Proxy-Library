@@ -1,4 +1,4 @@
-Tor Onion Proxy Library - with tor 0.3.2.0 alpha-dev built with NDK r15b
+Tor Onion Proxy Library - with tor 0.3.1.7 built with NDK r15b
 =======================
 # What is this fork?
 This is a fork of [Thali Projects's Tor Onion Proxy Library](https://github.com/thaliproject/Tor_Onion_Proxy_Library) which was pretty outdated,
@@ -12,7 +12,7 @@ __openssl1.1.0f__
 
 __libevent 2.0.23stable__
 
-__latest tor (currently 0.3.2.0 alpha-dev)__
+__latest tor (currently 0.3.1.7)__
 
 
 # How to build aar file on Linux
