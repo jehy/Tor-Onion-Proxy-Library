@@ -487,8 +487,9 @@ public abstract class OnionProxyManager {
             // For some reason the GeoIP's location can only be given as a file name, not a path and it has
             // to be in the data directory so we need to set both
             printWriter.println("DataDirectory " + onionProxyContext.getWorkingDirectory().getAbsolutePath());
-            printWriter.println("GeoIPFile " + onionProxyContext.getGeoIpFile().getName());
-            printWriter.println("GeoIPv6File " + onionProxyContext.getGeoIpv6File().getName());
+            printWriter.println("GeoIPFile " + onionProxyContext.getGeoIpFile().getAbsolutePath());
+            printWriter.println("GeoIPv6File " + onionProxyContext.getGeoIpv6File().getAbsolutePath());
+            printWriter.println("PidFile " + onionProxyContext.getPidFile().getAbsolutePath());
         } finally {
             if (printWriter != null) {
                 printWriter.close();

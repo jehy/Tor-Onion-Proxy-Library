@@ -14,6 +14,7 @@ See the Apache 2 License for the specific language governing permissions and lim
 buildscript {
     repositories {
         mavenCentral()
+	jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.3'
@@ -34,7 +35,7 @@ android {
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 25
-        versionName '0.0.5'
+        versionName '0.0.6'
         versionCode 4
         archivesBaseName = 'ThaliOnionProxyAndroid'
     }
